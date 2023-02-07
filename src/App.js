@@ -1,23 +1,20 @@
+import { Outlet } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-full">
+      <Sidebar />
+      <section className="h-full inline-block align-top overflow-auto w-9/12">
+        <header className="border-b-2 border-[#EDEDED] mb-24">
+          <span>link 1</span>
+          <span>link 2</span>
+        </header>
+        <main className="mx-8">
+          <Outlet  />
+        </main>
+      </section>
     </div>
   );
 }

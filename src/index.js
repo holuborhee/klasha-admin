@@ -8,6 +8,7 @@ import './index.css';
 import App from './App';
 import Transactions from './Transactions';
 import Dashboard from './Dashboard';
+import ErrorPage from "./ErrorPage";
 import reportWebVitals from './reportWebVitals';
 
 
@@ -15,6 +16,7 @@ const router = createHashRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

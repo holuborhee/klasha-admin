@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/klasha-admin/static/css/main.0875e937.css",
-    "main.js": "/klasha-admin/static/js/main.47a15cec.js",
+    "main.js": "/klasha-admin/static/js/main.3125c0d1.js",
     "static/js/787.6733d5ec.chunk.js": "/klasha-admin/static/js/787.6733d5ec.chunk.js",
     "index.html": "/klasha-admin/index.html",
     "main.0875e937.css.map": "/klasha-admin/static/css/main.0875e937.css.map",
-    "main.47a15cec.js.map": "/klasha-admin/static/js/main.47a15cec.js.map",
+    "main.3125c0d1.js.map": "/klasha-admin/static/js/main.3125c0d1.js.map",
     "787.6733d5ec.chunk.js.map": "/klasha-admin/static/js/787.6733d5ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0875e937.css",
-    "static/js/main.47a15cec.js"
+    "static/js/main.3125c0d1.js"
   ]
 }

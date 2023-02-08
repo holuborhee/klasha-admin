@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import logo from './logo.svg';
 import { FaUserCircle } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";

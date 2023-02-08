@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavGroup({ title, links }) {
   return (
@@ -8,10 +8,10 @@ function NavGroup({ title, links }) {
       {
         links.map(link => (
           <li key={link.text} className="my-3">
-            <Link to={link.url || link.text.toLowerCase()} className="flex items-center text-lg">
+            <NavLink to={link.url || link.text.toLowerCase()} className={({ isActive }) => isActive ? "text-primary flex items-center text-lg" : "flex items-center text-lg"}>
               <span className="mr-3">{link.icon}</span>
               {link.text}
-            </Link>
+            </NavLink>
           </li>
         ))
       }

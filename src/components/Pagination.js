@@ -3,7 +3,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 function Pagination({ totalPages, currentPage, onPageChange }) {
   return (
-    <ul className="border-[#F0F0F0] rounded-lg border-[1px] flex w-1/3 justify-between items-center m-4 p-2 text-[#A39D9E]">
+    <ul className="border-[#F0F0F0] rounded-lg border-[1px] flex md:w-1/3 w-full justify-between items-center my-4 md:m-4 p-2 text-[#A39D9E]">
       <li>
         <button className="disabled:text-gray-800" disabled={currentPage<2} onClick={() => onPageChange(currentPage-1)}><FaChevronLeft /></button>
       </li>

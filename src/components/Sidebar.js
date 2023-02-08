@@ -12,7 +12,7 @@ import { IoBriefcaseOutline } from "react-icons/io5"
 import { FaChevronLeft } from "react-icons/fa";
 import { FaRegQuestionCircle } from "react-icons/fa";
 
-function Sidebar() {
+function Sidebar({ show, onHidePanel }) {
 
   const mainPagesLinks = [
     { text: "Dashboard", url: "/", icon: <FaChartPie /> },
@@ -26,8 +26,8 @@ function Sidebar() {
   const sendPaymentLinks = [ { text: "Wire", icon: <FaExchangeAlt /> }, ]
 
   return (
-    <div className="bg-[#FFFBF7] w-3/12 h-full inline-block align-top overflow-auto relative pl-12 pt-10">
-      <h1 className="mb-14">Klasha</h1>
+    <div className={`${show ? '' : 'hidden'} bg-[#FFFBF7] w-7/12 md:w-3/12 h-full inline-block align-top overflow-auto relative pl-12 pt-10`}>
+      <h1 className="mb-14 text-[#0A0A0A] text-2xl font-extrabold">Klasha</h1>
 
       <NavGroup title="Main Pages" links={mainPagesLinks} />
       <NavGroup title="Accept Payments" links={acceptPaymentLinks} />
@@ -38,7 +38,7 @@ function Sidebar() {
          <FaRegQuestionCircle />
          Support
         </Link>
-        <button className="flex justify-between items-center rounded-md border-black border-2 py-2 px-3">
+        <button onClick={() => onHidePanel(false)} className="flex justify-between items-center rounded-md border-black border-2 py-2 px-3">
           <FaChevronLeft />
           Hide Panel
         </button>

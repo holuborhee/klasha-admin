@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/klasha-admin/static/css/main.94e65b02.css",
+    "main.js": "/klasha-admin/static/js/main.4681e0e9.js",
+    "static/js/787.6733d5ec.chunk.js": "/klasha-admin/static/js/787.6733d5ec.chunk.js",
+    "index.html": "/klasha-admin/index.html",
+    "main.94e65b02.css.map": "/klasha-admin/static/css/main.94e65b02.css.map",
+    "main.4681e0e9.js.map": "/klasha-admin/static/js/main.4681e0e9.js.map",
+    "787.6733d5ec.chunk.js.map": "/klasha-admin/static/js/787.6733d5ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e65b02.css",
+    "static/js/main.4681e0e9.js"
+  ]
+}
